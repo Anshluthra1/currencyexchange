@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ANSH'S Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="img/money.png" alt="" class="money-img" />
+    <h1>ANSH'S Exchange Rate Calculator</h1>
+    <p>Choose the currency and the amounts to get the exchange rate</p>
+
+    <div class="container">
+      <div class="currency">
+        <select id="currency-one">
+          <option value="AED">(UAE)🇦🇪AED</option>
+          <option value="ARS">(ARGENTINA)🇦🇷ARS</option>
+          <option value="AUD">(AUSTRALIA) 🇦🇺AUD</option>
+          <option value="BGN">(BULGARIA)🇧🇬BGN</option>
+          <option value="BRL">(BRAZIL)🇧🇷BRL</option>
+          <option value="BSD">(BAHAMAS)🇧🇸BSD</option>
+          <option value="CAD">(CANADA)🇨🇦CAD</option>
+          <option value="CHF">(SWITZERLAND)🇨🇭CHF</option>
+          <option value="CLP">(CHILE)🇨🇱CLP</option>
+          <option value="CNY">(CHINA)🇨🇳CNY</option>
+          <option value="COP">(COLOMBIA)🇨🇴COP</option>
+          <option value="CZK">(CZECH REPUBLIC)🇨🇿CZK</option>
+          <option value="DKK">(DENMARK)🇩🇰DKK</option>
+          <option value="DOP">(DOMINICAN REPUBLIC)🇩🇲DOP</option>
+          <option value="EGP">(EGYPT)🇪🇬EGP</option>
+          <option value="EUR">(FRANCE)🇫🇷EUR</option>
+          <option value="FJD">(FIJI)🇫🇯FJD</option>
+          <option value="GBP">(UNITED KINGDOM)🇬🇧GBP</option>
+          <option value="GTQ">(GAUTEMALA)🇬🇹GTQ</option>
+          <option value="HKD">(HONG KONG)🇭🇰HKD</option>
+          <option value="HRK">(CROATIA)🇭🇷HRK</option>
+          <option value="HUF">(HUNGARY)🇭🇺HUF</option>
+          <option value="IDR">(INDONESIA)🇮🇩IDR</option>
+          <option value="ILS">(ISRAEL)🇮🇱ILS</option>
+          <option value="INR">(INDIA)🇮🇳INR</option>
+          <option value="ISK">(ICELAND)🇮🇸ISK</option>
+          <option value="JPY">(JAPAN)🇯🇵JPY</option>
+          <option value="KRW">(SOUTH KOREA)🇰🇷KRW</option>
+          <option value="KZT">(KAZAKHASTAN)🇰🇿KZT</option>
+          <option value="MXN">(MEXICO)🇲🇽MXN</option>
+          <option value="MYR">(MALAYSIA)🇲🇾MYR</option>
+          <option value="NOK">(NORWAY)🇳🇴NOK</option>
+          <option value="NZD">(NEW ZEALAND)🇳🇿NZD</option>
+          <option value="PAB">(PANAMA)🇵🇦PAB</option>
+          <option value="PEN">(PERU)🇵🇪PEN</option>
+          <option value="PHP">(PHILIPPINES)🇵🇭PHP</option>
+          <option value="PKR">(PAKISTAN)🇵🇰PKR</option>
+          <option value="PLN">(POLAND)🇵🇱PLN</option>
+          <option value="PYG">(PARGUAY)🇵🇾PYG</option>
+          <option value="RON">(ROMANIA)🇷🇴RON</option>
+          <option value="RUB">(RUSSIA)🇷🇺RUB</option>
+          <option value="SAR">(SAUDI ARABIA)🇸🇦SAR</option>
+          <option value="SEK">(SWEDEN)🇸🇪SEK</option>
+          <option value="SGD">(SINGAPORE)🇸🇬SGD</option>
+          <option value="THB">(THAILAND)🇹🇭THB</option>
+          <option value="TRY">(TURKEY)🇹🇷TRY</option>
+          <option value="TWD">(TAIWAN)🇹🇼TWD</option>
+          <option value="UAH">(UKRAINE)🇺🇦UAH</option>
+          <option value="USD" selected>(USA)🇺🇸USD</option>
+          <option value="UYU">(URUGUAY)🇺🇾UYU</option>
+          <option value="VND">(VIETNAM)🇻🇳VND</option>
+          <option value="ZAR">(SOUTH AFRICA)🇿🇦ZAR</option>
+        </select>
+        <input type="number" id="amount-one" placeholder="0" value="1" />
+      </div>
+
+      <div class="swap-rate-container">
+        <button class="btn" id="swap">
+          Swap
+        </button>
+        <div class="rate" id="rate"></div>
+      </div>
+
+      <div class="currency">
+        <select id="currency-two">
+         <option value="AED">(UAE)🇦🇪AED</option>
+          <option value="ARS">(ARGENTINA)🇦🇷ARS</option>
+          <option value="AUD">(AUSTRALIA) 🇦🇺AUD</option>
+          <option value="BGN">(BULGARIA)🇧🇬BGN</option>
+          <option value="BRL">(BRAZIL)🇧🇷BRL</option>
+          <option value="BSD">(BAHAMAS)🇧🇸BSD</option>
+          <option value="CAD">(CANADA)🇨🇦CAD</option>
+          <option value="CHF">(SWITZERLAND)🇨🇭CHF</option>
+          <option value="CLP">(CHILE)🇨🇱CLP</option>
+          <option value="CNY">(CHINA)🇨🇳CNY</option>
+          <option value="COP">(COLOMBIA)🇨🇴COP</option>
+          <option value="CZK">(CZECH REPUBLIC)🇨🇿CZK</option>
+          <option value="DKK">(DENMARK)🇩🇰DKK</option>
+          <option value="DOP">(DOMINICAN REPUBLIC)🇩🇲DOP</option>
+          <option value="EGP">(EGYPT)🇪🇬EGP</option>
+          <option value="EUR" selected>(FRANCE)🇫🇷EUR</option>
+          <option value="FJD">(FIJI)🇫🇯FJD</option>
+          <option value="GBP">(UNITED KINGDOM)🇬🇧GBP</option>
+          <option value="GTQ">(GAUTEMALA)🇬🇹GTQ</option>
+          <option value="HKD">(HONG KONG)🇭🇰HKD</option>
+          <option value="HRK">(CROATIA)🇭🇷HRK</option>
+          <option value="HUF">(HUNGARY)🇭🇺HUF</option>
+          <option value="IDR">(INDONESIA)🇮🇩IDR</option>
+          <option value="ILS">(ISRAEL)🇮🇱ILS</option>
+          <option value="INR">(INDIA)🇮🇳INR</option>
+          <option value="ISK">(ICELAND)🇮🇸ISK</option>
+          <option value="JPY">(JAPAN)🇯🇵JPY</option>
+          <option value="KRW">(SOUTH KOREA)🇰🇷KRW</option>
+          <option value="KZT">(KAZAKHASTAN)🇰🇿KZT</option>
+          <option value="MXN">(MEXICO)🇲🇽MXN</option>
+          <option value="MYR">(MALAYSIA)🇲🇾MYR</option>
+          <option value="NOK">(NORWAY)🇳🇴NOK</option>
+          <option value="NZD">(NEW ZEALAND)🇳🇿NZD</option>
+          <option value="PAB">(PANAMA)🇵🇦PAB</option>
+          <option value="PEN">(PERU)🇵🇪PEN</option>
+          <option value="PHP">(PHILIPPINES)🇵🇭PHP</option>
+          <option value="PKR">(PAKISTAN)🇵🇰PKR</option>
+          <option value="PLN">(POLAND)🇵🇱PLN</option>
+          <option value="PYG">(PARGUAY)🇵🇾PYG</option>
+          <option value="RON">(ROMANIA)🇷🇴RON</option>
+          <option value="RUB">(RUSSIA)🇷🇺RUB</option>
+          <option value="SAR">(SAUDI ARABIA)🇸🇦SAR</option>
+          <option value="SEK">(SWEDEN)🇸🇪SEK</option>
+          <option value="SGD">(SINGAPORE)🇸🇬SGD</option>
+          <option value="THB">(THAILAND)🇹🇭THB</option>
+          <option value="TRY">(TURKEY)🇹🇷TRY</option>
+          <option value="TWD">(TAIWAN)🇹🇼TWD</option>
+          <option value="UAH">(UKRAINE)🇺🇦UAH</option>
+          <option value="USD">(USA)🇺🇸USD</option>
+          <option value="UYU">(URUGUAY)🇺🇾UYU</option>
+          <option value="VND">(VIETNAM)🇻🇳VND</option>
+          <option value="ZAR">(SOUTH AFRICA)🇿🇦ZAR</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0" />
+		  
+      </div>
+    </div>
+<div id="logos"> 
+	<a href="https://github.com/Anshluthra1"><img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>
+        </a>
+<a href="hhttps://www.linkedin.com/in/ansh-luthra-016452117/"><img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>
+        </a>
+        <a href="https://www.facebook.com/ansh.luthra.35/"><img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg' alt='facebook' height='40'>
+        </a>
+        <a href="https://www.instagram.com/anshluthraa1/"><img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg' alt='instagram' height='40'>
+        </a>
+         <a href="anshluthra.herokuapp.com" target="_blank" ><img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/icloud.svg' alt='website' height='40'>
+        </a>
+	  
+	  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
