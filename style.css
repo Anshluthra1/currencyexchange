@@ -44,9 +44,10 @@ p {
 }
 
 .money-img {
-  width: 150px;
+  width: 1500px;
+	height:1000px;
 	margin-bottom:-500px;
-	margin-top:450px;
+	margin-top:650px;
 }
 
 .currency {
