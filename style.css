@@ -14,8 +14,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70vh;
-  margin-top: 305px;
+  
+  margin-top: 405px;
   padding: 0px;
 	background-image: url(IMG_4107.JPG);
 	background-size: 600px,auto,100%;
