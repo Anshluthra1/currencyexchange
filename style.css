@@ -28,6 +28,7 @@ body {
 
 h1 {
   color: var(--primary-color);
+	margin-top:80px;
 }
 
 p {
